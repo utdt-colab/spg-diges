@@ -1,0 +1,156 @@
+/* General */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #201c50;
+    background-color: #ffffff;
+    line-height: 1.6;
+    margin: 0; /* Elimina márgenes */
+}
+
+/* Encabezados */
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #201c50;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #201c50;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #201c50;
+    font-size: 25px;
+}
+
+h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #201c50;
+    font-size: 20px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #201c50; /* Fondo azul */
+    padding: 10px 0; /* Espaciado interno */
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que el menú quede encima de otros elementos */
+}
+
+/* Lista del menú */
+nav ul {
+    list-style: none; /* Elimina puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Organiza las opciones en fila */
+    justify-content: center; /* Centra las opciones */
+    gap: 20px; /* Espacio entre las opciones */
+}
+
+/* Elementos del menú */
+nav ul li {
+    margin: 0; /* Sin márgenes adicionales */
+}
+
+/* Enlaces del menú */
+nav ul li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px; /* Tamaño del texto */
+    color: #ffffff; /* Blanco por defecto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+/* Hover en enlaces */
+nav ul li a:hover {
+    color: #d90429; /* Cambia al rojo al pasar el cursor */
+    background-color: #3f3b8b; /* Fondo azul claro */
+}
+
+/* Espaciado para el contenido principal */
+#contenido {
+    padding-top: 60px; /* Deja espacio para el menú fijo */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #201c50;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Logos de instituciones */
+.instituciones-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5cm; /* Ajusta el espacio entre los logos */
+    flex-wrap: wrap; /* Permite que los logos pasen a una nueva línea en pantallas pequeñas */
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.instituciones-logos img {
+    height: auto;
+    max-width: 100%;
+}
+
+.logo1 {
+    width: 300px;
+}
+
+.logo2 {
+    width: 150px;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia a vertical en móviles */
+        align-items: center; /* Centra las opciones */
+        gap: 10px; /* Reduce el espacio entre opciones */
+    }
+
+    .instituciones-logos img {
+        width: 100px; /* Reduce el tamaño de los logos */
+    }
+}
+
+.social-share {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre cada botón */
+    margin-top: 20px;
+}
+
+.social-share p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-share a img {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: auto;
+    transition: transform 0.2s; /* Efecto al pasar el mouse */
+}
+
+.social-share a img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
