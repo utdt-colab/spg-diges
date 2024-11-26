@@ -7,6 +7,10 @@ body {
     margin: 0; /* Elimina márgenes */
 }
 
+html {
+    font-size: 100%; /* Asegura que el tamaño base sea consistente */
+}
+
 /* Encabezados */
 h1 {
     font-family: 'Noto Sans', sans-serif;
@@ -128,6 +132,13 @@ footer {
         gap: 10px; /* Reduce el espacio entre opciones */
     }
 
+    @media (max-width: 768px) {
+        .chart-container {
+            max-width: 100%; /* En pantallas pequeñas, ocupa todo el ancho disponible */
+        }
+    }
+    
+
     .instituciones-logos img {
         width: 100px; /* Reduce el tamaño de los logos */
     }
@@ -153,4 +164,26 @@ footer {
 
 .social-share a img:hover {
     transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.chart-container {
+    width: 100%; /* El contenedor ocupará todo el ancho disponible */
+    max-width: 800px; /* Tamaño máximo del gráfico */
+    margin: 20px auto; /* Centrado y espacio alrededor */
+    overflow: hidden; /* Asegura que los gráficos no se desborden */
+}
+
+.flourish-embed {
+    width: 100%; /* El gráfico se adapta al ancho del contenedor */
+    height: 0; /* Inicialmente no ocupa altura */
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    position: relative; /* Posiciona el contenido dentro del contenedor */
+}
+
+.flourish-embed iframe {
+    position: absolute; /* El iframe se posiciona dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
