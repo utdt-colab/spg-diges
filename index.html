@@ -55,7 +55,7 @@
         </ul>
 
         <h3>Cómo citar la base de datos:</h3>
-        <p>Paola Bergallo y Andrea Castagnola (2024). “Sentencias con Perspectiva de Género (SPG) de las altas cortes de países de la región (Versión 1.0)” en el marco del proyecto "Decisiones e Institucionalidades de Género en los Sistemas de Justicia de América Latina (DIGES)", realizado por el Colaboratorio Derecho y Desarrollo de la Escuela de Derecho de la Universidad Torcuato Di Tella y la Red ALAS. Última modificación: febrero 2024. Disponible en: <a href="https://florgayraud.github.io/spg-diges.github.io/" target="_blank">https://florgayraud.github.io/spg-diges.github.io/</a>.</p>
+        <p>Paola Bergallo y Andrea Castagnola (2024). “Sentencias con Perspectiva de Género (SPG) de las altas cortes de países de la región (Versión 1.0)” en el marco del proyecto "Decisiones e Institucionalidades de Género en los Sistemas de Justicia de América Latina (DIGES)", realizado por el Colaboratorio Derecho y Desarrollo de la Escuela de Derecho de la Universidad Torcuato Di Tella y la Red ALAS. Última modificación: Noviembre 2024. Disponible en: <a href="https://colab-utdt.github.io/spg-diges/" target="_blank">https://colab-utdt.github.io/spg-diges/</a>.</p>
 
         <h3>Agradecimientos</h3>
         <p>La base de datos se trabajó en 2 etapas.</p>
@@ -72,17 +72,17 @@
         <p>Compartir en:</p> 
         
         <!-- Botón de Twitter (X) -->
-        <a href="https://twitter.com/intent/tweet?url=https://florgayraud.github.io/spg-diges.github.io&text=Mira%20esta%20base%20de%20datos%20de%20sentencias%20con%20perspectiva%20de%20género" target="_blank">
+        <a href="https://twitter.com/intent/tweet?url=https://colab-utdt.github.io/spg-diges&text=Mira%20esta%20base%20de%20datos%20de%20sentencias%20con%20perspectiva%20de%20género" target="_blank">
             <img src="assets/img/twitter.png" alt="Compartir en Twitter" width="30">
         </a>
 
         <!-- Botón de LinkedIn -->
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://florgayraud.github.io/spg-diges.github.io" target="_blank">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://colab-utdt.github.io/spg-diges" target="_blank">
             <img src="assets/img/linkedin.png" alt="Compartir en LinkedIn" width="30">
         </a>
 
         <!-- Botón de WhatsApp -->
-        <a href="https://wa.me/?text=Mira%20esta%20base%20de%20datos%20de%20sentencias%20con%20perspectiva%20de%20género:%20https://florgayraud.github.io/spg-diges.github.io" target="_blank">
+        <a href="https://wa.me/?text=Mira%20esta%20base%20de%20datos%20de%20sentencias%20con%20perspectiva%20de%20género:%20https://colab-utdt.github.io/spg-diges" target="_blank">
             <img src="assets/img/whatsapp.png" alt="Compartir en WhatsApp" width="30">
         </a>
     </div>
@@ -176,73 +176,131 @@
     <p>A continuación, se muestran los gráficos y el análisis de los datos.</p>
 
     <!-- Contenedor principal para los menús -->
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-top: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 5px; margin: 0; padding: 0;">
 
         <!-- Sub-sección Totales -->
-        <section id="totales" style="flex: 1;">
+        <section id="totales" style="flex: 1; margin: 0; padding: 0;">
             <h3>Totales</h3>
             <!-- Índice de Gráficos Totales -->
             <ul>
                 <li><a href="#grafico-sentencias-totales">Cantidad de sentencias por año</a></li>
                 <li><a href="#grafico-tipo-materia">Tipo de sentencias por materia</a></li>
                 <li><a href="#grafico-decision-orientacion">Orientación de la decisión sobre DDHH</a></li>
+                <li><a href="#grafico-dimensiones">Cantidad de sentencias por dimensión</a></li>
+                <li><a href="#grafico-tipo-caso">Cantidad de sentencias por tipo de caso</a></li>
+                <li><a href="#grafico-genero">Cantidad de sentencias con perspectiva de género</a></li>
+                <li><a href="#grafico-remedios">Cantidad de sentencias por remedio</a></li>
             </ul>
 
             <!-- Gráficos de Totales -->
 
             <!-- Gráfico 1: Cantidad de sentencias -->
             <h4 id="grafico-sentencias-totales">Cantidad de sentencias por año</h4>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/20458217">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/20458217/thumbnail" width="100%" alt="chart visualization" /></noscript>
+            <div class="chart-container">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/20458217">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/20458217/thumbnail" width="100%" alt="chart visualization" />
+                    </noscript>
+                </div>
             </div>
             
             <!-- Gráfico 2: Tipo de sentencias por materia -->
             <h4 id="grafico-tipo-materia">Tipo de sentencias por materia</h4>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/20322227">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/20322227/thumbnail" width="100%" alt="chart visualization" /></noscript>
+            <div class="chart-container">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/20322227">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/20322227/thumbnail" width="100%" alt="400px" />
+                    </noscript>
+                </div>
             </div>
 
             <!-- Gráfico 3: Orientación de la decisión -->
             <h4 id="grafico-decision-orientacion">Orientación de la decisión sobre DDHH</h4>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/20322361">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/20322361/thumbnail" width="100%" alt="chart visualization" /></noscript>
+            <div class="chart-container">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/20322361">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/20322361/thumbnail" width="100%" alt="chart visualization" />
+                    </noscript>
+                </div>
             </div>
+
+            <!-- Gráfico 4: Cantidad de sentencias por dimensión -->
+            <h4 id="grafico-dimensiones">Cantidad de sentencias por dimensión</h4>
+            
+            <!-- Gráfico 5: Cantidad de sentencias por tipo de caso -->
+            <h4 id="grafico-tipo-caso">Cantidad de sentencias por tipo de caso</h4>
+
+            <!-- Gráfico 6: Cantidad de sentencias con perspectiva de género -->
+            <h4 id="grafico-genero">Cantidad de sentencias con perspectiva de género</h4>
+
+            <!-- Gráfico 7: Cantidad de sentencias con perspectiva de género -->
+            <h4 id="grafico-remedios">Cantidad de sentencias por remedio</h4>            
+            
         </section>
 
         <!-- Sub-sección Por País -->
-        <section id="por-pais" style="flex: 1;">
+        <section id="por-pais" style="flex: 1;margin: 0; padding: 0;">
             <h3>Por país</h3>
             <!-- Índice de Gráficos Por País -->
             <ul>
                 <li><a href="#grafico-sentencias-pais">Cantidad de sentencias por país</a></li>
                 <li><a href="#grafico-materia-pais">Sentencias por materia y país</a></li>
                 <li><a href="#grafico-decision-pais">Orientación de la decisión por país</a></li>
+                <li><a href="#grafico-dimensiones-pais">Cantidad de sentencias por dimensión y país</a></li>
+                <li><a href="#grafico-tipo-caso-pais">Cantidad de sentencias por tipo de caso y país</a></li>
+                <li><a href="#grafico-genero-pais">Cantidad de sentencias con perspectiva de género por país</a></li>
+                <li><a href="#grafico-remedios-pais">Cantidad de sentencias por remedio y país</a></li>
             </ul>
 
             <!-- Gráficos Por País -->
             <!-- Gráfico 1: Cantidad de sentencias por país -->
             <h4 id="grafico-sentencias-pais">Cantidad de sentencias por país</h4>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/20285332">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/20285332/thumbnail" width="100%" alt="chart visualization" /></noscript>
+            <div class="chart-container">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/20285332">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/20285332/thumbnail" width="100%" alt="chart visualization" />
+                    </noscript>
+                </div>
             </div>
 
             <!-- Gráfico del País 2 -->
             <h4 id="grafico-materia-pais">Sentencias por materia y país</h4>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/20458309">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/20458309/thumbnail" width="100%" alt="chart visualization" /></noscript>
+            <div class="chart-container">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/20458309">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/20458309/thumbnail" width="100%" alt="400px" />
+                    </noscript>
+                </div>
             </div>
 
             <!-- Gráfico del País 3 -->
             <h4 id="grafico-decision-pais">Orientación de la decisión por país</h4>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/20458444">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/20458444/thumbnail" width="100%" alt="chart visualization" /></noscript>
+            <div class="chart-container">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/20458444">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/20458444/thumbnail" width="100%" alt="chart visualization" />
+                    </noscript>
+                </div>
             </div>
+
+            <!-- Gráfico 4: Cantidad de sentencias por dimensión -->
+            <h4 id="grafico-dimensiones-pais">Cantidad de sentencias por dimensión y país</h4>
+            
+            <!-- Gráfico 5: Cantidad de sentencias por tipo de caso -->
+            <h4 id="grafico-tipo-caso-pais">Cantidad de sentencias por tipo de caso y país</h4>
+
+            <!-- Gráfico 6: Cantidad de sentencias con perspectiva de género -->
+            <h4 id="grafico-genero-pais">Cantidad de sentencias con perspectiva de género por país</h4>
+
+            <!-- Gráfico 7: Cantidad de sentencias con perspectiva de género -->
+            <h4 id="grafico-remedios-pais">Cantidad de sentencias por remedio y país</h4>            
+
         </section>
 
     </div>
